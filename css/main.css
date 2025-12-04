@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: "Arina";
+    src: url("../fonts/Arina.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arina', sans-serif;
     font-weight: 400;
     color: #000000;
     font-size: 16px;
@@ -20,29 +25,37 @@ img {
     max-width: 100%;
 }
 
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url("../img/баннер.jpg") center center / cover no-repeat;
+}
+
 .wrapper {
-    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(202, 249, 248, 1) 100%, rgba(83, 237, 234, 1) 100%);
+    background: linear-gradient(180deg,rgba(17, 33, 33, 1) 15%, rgba(59, 90, 84, 1) 30%, rgba(77, 113, 101, 1) 40%, rgba(77, 113, 101, 1) 60%, rgba(59, 90, 84, 1) 71%, rgba(17, 33, 33, 1) 85%);
     width: 100%;
 }
 
 .container {
-    width: 1400px;
-    margin: 0 auto;
+    width: 1600px;
+    margin: auto;
 }
 
 header {
-    padding: 50px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 header .logo {
     text-transform: uppercase;
-    font-size: 29px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 header nav {
     float: right;
-    width: 50%;
+    width: 30%;
 }
 
 header nav ul {
@@ -55,22 +68,23 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
+    font-size: 30px;
 }
 
 header nav ul a {
-    color: #000000;
+    color: #ffffff;
+    font-size: 25px;
 }
 
 header nav ul li.active::after {
     content: '';
     display: block;
-    width: 40px;
+    width: 30px;
     height: 5px;
     background: #f80303;
     border-radius: 10px;
     position: relative;
     top: 10px;
-    left: -15px;
 }
 
 header nav ul li:not(.active):not(.btn) a:hover {
@@ -79,24 +93,29 @@ header nav ul li:not(.active):not(.btn) a:hover {
 
 header nav ul li.btn a {
     background: #f80303;
-    padding: 9px 17px;
+    padding: 2px 11px;
     border-radius: 5px;
     transition: all 500ms ease;
+    padding-top: 10px;
 }
 
 header nav ul li.btn a:hover {
-    background: #d9ff03;
+    background: #192f2c;
 }
 
 .hero {
     padding-bottom: 100px;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .hero--info {
-    width: 530px;
-    padding-top: 70px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 500px;
 }
 
 .hero--info h2 {
@@ -106,15 +125,29 @@ header nav ul li.btn a:hover {
 }
 
 .hero--info h1 {
-    color: #d4780e;
-    font-size: 50px;
-    font-weight: 600;
+    width: 400px;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 600px;
+    margin-left: 100px;
+    padding: 0 500px;
+    color: #ffffff;
+    -webkit-text-stroke: 0.px #000000;
 }
 
-.hero--info p {
-    font-weight: 500;
-    line-height: 170%;
-    margin: 30px 0;
+.hero--right {
+    margin-top: 350px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #D4C9C1;
+    line-height: 1.4;
+    font-size: 25px;
+    font-weight: 600;
+    word-wrap: break-word;
 }
 
 .hero--info .btn {
@@ -134,8 +167,8 @@ header nav ul li.btn a:hover {
 
 .hero img {
     position: absolute;
-    top: -150px;
-    right: 0;
+    top: -10px;
+    right: -00px;
 }
 
 /* Секция с 4мя фотками */
@@ -313,7 +346,7 @@ header nav ul li.btn a:hover {
     border: 0;
     border-radius: 5px;
     width: 380px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arina', sans-serif;
     font-weight: 400;
     padding: 20px 30px;
     color: #f80303;

@@ -21,7 +21,7 @@ img {
 }
 
 .wrapper {
-    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(202, 249, 248, 1) 100%, rgba(83, 237, 234, 1) 100%);
+    background: background: linear-gradient(180deg,rgba(20, 97, 32, 1) 9%, rgba(61, 156, 100, 1) 21%, rgba(235, 235, 235, 1) 37%);
     width: 100%;
 }
 
